@@ -5,3 +5,5 @@ seaborn
 plotly
 datetime
 yfinance
+statsmodels
+scikit-learn

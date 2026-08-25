@@ -1,0 +1,18 @@
+Financial PhraseBank
+====================
+
+Malo, P., Sinha, A., Korhonen, P., Wallenius, J., & Takala, P. (2014).
+"Good debt or bad debt: Detecting semantic orientations in economic texts."
+Journal of the Association for Information Science and Technology, 65(4),
+782-796.
+
+Licence: Creative Commons Attribution-NonCommercial-ShareAlike 3.0
+         (CC BY-NC-SA 3.0)  https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+This copy is redistributed for non-commercial university teaching in
+25882 AI-powered Investment and Risk Management, UTS Business School,
+under the terms of the same licence. The sentences are unmodified; the only
+change is of container format -- the four ISO-8859-1 .txt files have been
+folded into a single UTF-8 CSV, de-duplicated to one row per sentence, with
+an added integer `agreement` column recording the strictest annotator-agreement
+tier in which that sentence appears.

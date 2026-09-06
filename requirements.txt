@@ -7,3 +7,12 @@ datetime
 yfinance
 statsmodels
 scikit-learn
+
+# AIRM Lecture 9 -- Ethical Considerations in AI-powered Finance
+shap>=0.46
+lime>=0.2.0.1
+dice-ml>=0.11
+interpret>=0.6           # ExplainableBoostingClassifier; ~20 s per fit on this data
+scipy>=1.13
+ipywidgets>=8.1  
+

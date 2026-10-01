@@ -15,7 +15,7 @@ dice-ml>=0.11
 interpret>=0.6           # ExplainableBoostingClassifier in Lec09 Lab A; ~20 s per fit
 scipy>=1.13
 ipywidgets>=8.1  
-xgboost>=2.0             # warm-up: the black-box model
+# xgboost>=2.0             # warm-up: the black-box model
 
 # Known incompatibility. With xgboost 3.x, shap (0.52 and earlier) cannot compute
 # *interventional* TreeSHAP -- TreeExplainer(model, data=...), or shap.Explainer(model,

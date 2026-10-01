@@ -12,7 +12,14 @@ scikit-learn
 shap>=0.46
 lime>=0.2.0.1
 dice-ml>=0.11
-interpret>=0.6           # ExplainableBoostingClassifier; ~20 s per fit on this data
+interpret>=0.6           # ExplainableBoostingClassifier in Lec09 Lab A; ~20 s per fit
 scipy>=1.13
 ipywidgets>=8.1  
+xgboost>=2.0             # warm-up: the black-box model
+
+# Known incompatibility. With xgboost 3.x, shap (0.52 and earlier) cannot compute
+# *interventional* TreeSHAP -- TreeExplainer(model, data=...), or shap.Explainer(model,
+# background) -- and fails with "Categorical split is not yet supported" even when the
+# model has no categorical features. The notebooks avoid it: they use TreeExplainer's
+# default, or the model-agnostic shap.Explainer(model.predict, background).
 

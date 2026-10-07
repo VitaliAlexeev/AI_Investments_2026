@@ -1,0 +1,62 @@
+{
+  "generated_by": "Claude Opus 5.5, in the Lecture 10 authoring session on claude.ai, 6 October 2026",
+  "note": "Written once from the two prompts below and not edited after the checks in Lab 10d were run. A stand-in for a live API call: set USE_LIVE = True in the notebook to generate your own.",
+  "prompts": {
+    "Severe but plausible": "You are a risk analyst at an Australian superannuation fund that holds US assets. Write 8 distinct stress scenarios for a single month. Each should be severe but plausible: something that could realistically happen within the next five years. For each scenario give a short name, a one-sentence narrative, and the total return over the month, in per cent, of each of these ten US assets: Banks, Insur (insurers), RlEst (real estate), Oil, Util (utilities), Hlth (health care), Softw (software), Rtail (retail), which are equity industry portfolios, plus Treasuries (long-term government bonds) and Corp bonds (investment-grade corporate bonds). Reply with JSON only: a list of objects with keys \"name\", \"narrative\" and \"returns\", where \"returns\" maps each of the ten asset keys to a number.",
+    "Worst imaginable": "You are a risk analyst at an Australian superannuation fund that holds US assets. Write 8 distinct stress scenarios for a single month. Each should be the worst month you can imagine for these assets. For each scenario give a short name, a one-sentence narrative, and the total return over the month, in per cent, of each of these ten US assets: Banks, Insur (insurers), RlEst (real estate), Oil, Util (utilities), Hlth (health care), Softw (software), Rtail (retail), which are equity industry portfolios, plus Treasuries (long-term government bonds) and Corp bonds (investment-grade corporate bonds). Reply with JSON only: a list of objects with keys \"name\", \"narrative\" and \"returns\", where \"returns\" maps each of the ten asset keys to a number."
+  },
+  "responses": {
+    "Severe but plausible": [
+      {"name": "Regional bank contagion",
+       "narrative": "Deposit flight spreads from mid-sized lenders to larger banks as unrealised bond losses and commercial property exposures come into focus.",
+       "returns": {"Banks": -22, "Insur": -12, "RlEst": -14, "Oil": -8, "Util": -2, "Hlth": -3, "Softw": -9, "Rtail": -10, "Treasuries": 4, "Corp bonds": -3}},
+      {"name": "Inflation resurgence and rate shock",
+       "narrative": "A run of hot inflation prints forces the Fed to signal further hikes, sending long yields sharply higher.",
+       "returns": {"Banks": -10, "Insur": -8, "RlEst": -15, "Oil": 4, "Util": -11, "Hlth": -6, "Softw": -16, "Rtail": -12, "Treasuries": -9, "Corp bonds": -7}},
+      {"name": "AI-led tech correction",
+       "narrative": "Disappointing returns on AI investment trigger a sharp de-rating of software and growth stocks that spills into the broader market.",
+       "returns": {"Banks": -8, "Insur": -6, "RlEst": -7, "Oil": -5, "Util": -2, "Hlth": -4, "Softw": -28, "Rtail": -11, "Treasuries": 3, "Corp bonds": -1}},
+      {"name": "Oil supply shock",
+       "narrative": "Conflict in the Gulf closes the Strait of Hormuz for several weeks and crude prices spike.",
+       "returns": {"Banks": -9, "Insur": -7, "RlEst": -8, "Oil": 18, "Util": -4, "Hlth": -3, "Softw": -10, "Rtail": -14, "Treasuries": -2, "Corp bonds": -3}},
+      {"name": "Commercial real estate collapse",
+       "narrative": "Office valuations reset sharply as refinancing fails, hitting lenders and property holdings.",
+       "returns": {"Banks": -16, "Insur": -10, "RlEst": -24, "Oil": -4, "Util": -3, "Hlth": -2, "Softw": -6, "Rtail": -8, "Treasuries": 3, "Corp bonds": -4}},
+      {"name": "Recession scare",
+       "narrative": "A sudden contraction in payrolls and consumer spending signals a hard landing.",
+       "returns": {"Banks": -14, "Insur": -9, "RlEst": -12, "Oil": -15, "Util": 1, "Hlth": -2, "Softw": -12, "Rtail": -16, "Treasuries": 6, "Corp bonds": -2}},
+      {"name": "Cyberattack on payment systems",
+       "narrative": "A coordinated cyberattack disrupts major US payment networks for several days.",
+       "returns": {"Banks": -18, "Insur": -11, "RlEst": -6, "Oil": -6, "Util": -5, "Hlth": -4, "Softw": -13, "Rtail": -15, "Treasuries": 3, "Corp bonds": -2}},
+      {"name": "US fiscal and Treasury market stress",
+       "narrative": "A failed Treasury auction and a sovereign rating downgrade push term premia higher and the dollar lower.",
+       "returns": {"Banks": -12, "Insur": -9, "RlEst": -11, "Oil": -3, "Util": -8, "Hlth": -5, "Softw": -10, "Rtail": -9, "Treasuries": -11, "Corp bonds": -9}}
+    ],
+    "Worst imaginable": [
+      {"name": "Systemic banking collapse",
+       "narrative": "Several of the largest US banks fail in quick succession and interbank funding freezes.",
+       "returns": {"Banks": -45, "Insur": -30, "RlEst": -35, "Oil": -20, "Util": -10, "Hlth": -12, "Softw": -25, "Rtail": -28, "Treasuries": 10, "Corp bonds": -15}},
+      {"name": "Runaway inflation and rate spike",
+       "narrative": "Inflation expectations de-anchor and long yields jump by several percentage points in weeks.",
+       "returns": {"Banks": -25, "Insur": -22, "RlEst": -35, "Oil": 15, "Util": -28, "Hlth": -18, "Softw": -40, "Rtail": -30, "Treasuries": -25, "Corp bonds": -22}},
+      {"name": "Pandemic worse than COVID",
+       "narrative": "A highly lethal new virus forces global lockdowns far stricter and longer than in 2020.",
+       "returns": {"Banks": -35, "Insur": -28, "RlEst": -30, "Oil": -45, "Util": -15, "Hlth": 5, "Softw": -20, "Rtail": -40, "Treasuries": 12, "Corp bonds": -12}},
+      {"name": "War between major powers",
+       "narrative": "Open military conflict between major powers disrupts trade, energy supply and shipping lanes.",
+       "returns": {"Banks": -30, "Insur": -25, "RlEst": -28, "Oil": 35, "Util": -12, "Hlth": -10, "Softw": -30, "Rtail": -32, "Treasuries": 8, "Corp bonds": -14}},
+      {"name": "AI bubble implosion",
+       "narrative": "The AI investment boom collapses as revenues fail to materialise and capital spending is slashed.",
+       "returns": {"Banks": -20, "Insur": -15, "RlEst": -18, "Oil": -15, "Util": -8, "Hlth": -10, "Softw": -60, "Rtail": -25, "Treasuries": 8, "Corp bonds": -8}},
+      {"name": "US sovereign default",
+       "narrative": "A debt-ceiling standoff ends in missed Treasury payments and a loss of safe-haven status.",
+       "returns": {"Banks": -40, "Insur": -35, "RlEst": -30, "Oil": -15, "Util": -25, "Hlth": -20, "Softw": -30, "Rtail": -30, "Treasuries": -30, "Corp bonds": -25}},
+      {"name": "Nationwide cyber blackout",
+       "narrative": "A cyberattack takes down large parts of the power grid and payment systems for weeks.",
+       "returns": {"Banks": -30, "Insur": -25, "RlEst": -20, "Oil": -10, "Util": -35, "Hlth": -15, "Softw": -35, "Rtail": -35, "Treasuries": 5, "Corp bonds": -10}},
+      {"name": "Global depression begins",
+       "narrative": "Simultaneous credit crunches in the US, Europe and China tip the world into depression.",
+       "returns": {"Banks": -38, "Insur": -30, "RlEst": -32, "Oil": -35, "Util": -12, "Hlth": -15, "Softw": -30, "Rtail": -35, "Treasuries": 15, "Corp bonds": -18}}
+    ]
+  }
+}
